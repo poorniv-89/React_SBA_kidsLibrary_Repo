@@ -1,0 +1,59 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffe066; /* Bright yellow background */
+    padding: 1rem;
+    border-bottom: 4px solid #f77f00;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #2ec4b6; /* Teal blue text */
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background-color: #ffddd2; /* Light pink background */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .nav a:hover {
+    background-color: #ff9f1c; /* Orange on hover */
+    color: white;
+    transform: scale(1.1);
+  }
+
+body{
+    text-align: center;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff0f6; /* Light pink background */
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    color: #3c096c; /* Dark purple text */
+  }
+  
+  .about-container h1 {
+    font-size: 2.5rem;
+    color: #ff6f61; /* Coral */
+    margin-bottom: 1rem;
+  }
+  
+  .about-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .about-container p:last-child {
+    font-style: italic;
+    color: #6a4c93; /* Soft purple */
+  }
