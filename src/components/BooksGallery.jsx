@@ -6,7 +6,7 @@ export default function BooksGallery() {
     async function fetchBooks() {
       try {
         const randomPage = Math.floor(Math.random() * 10) + 1; 
-        const API = `https://openlibrary.org/search.json?subject=children+stories&limit=10&page=${randomPage}`;
+        const API = `https://openlibrary.org/search.json?subject=children+stories&limit=20&page=${randomPage}`;
         const res = await fetch(API);
         const data = await res.json();
      
@@ -20,8 +20,9 @@ export default function BooksGallery() {
     fetchBooks();
   }, []);
 
-  return (
-    <div className="gallery">
+  let loaded = ()=>{
+    return (
+      <div className="gallery">
       {books.map((book, index) => (
         <div className="book" key={index}>
           {book.cover_i ? (
@@ -37,7 +38,14 @@ export default function BooksGallery() {
         </div>
       ))}
     </div>
-  );
+    )
+  }
+
+  let loading = ()=>{
+    return <p>Homepage loading....</p>
+  }
+
+  return books.length > 0 ? loaded() : loading();
 }
 
 
