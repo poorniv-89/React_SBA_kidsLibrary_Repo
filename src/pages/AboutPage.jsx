@@ -13,7 +13,7 @@ export default function AboutPage() {
           Parents can feel safe knowing all content is age-appropriate and designed with kids in mind.
         </p>
         <p>
-          Built with ❤️ using React and open book APIs.
+          Built using React and open book APIs.
         </p>
       </div>
     );

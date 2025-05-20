@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import BooksPage from './pages/BooksPage';
-import BookDetailsPage from './pages/BookDetailsPage';
+import Categories from './pages/CategoriesPage';
 import FavoritesPage from './pages/FavoritesPage';
 import AboutPage from './pages/AboutPage';
 import Nav from './components/Nav';
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/books' element={<BooksPage />} />
-        <Route path='/books/:id' element={<BookDetailsPage />} />
+        <Route path='/categories' element={<Categories />} />
         <Route path='/favorites' element={<FavoritesPage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/*' element={<NotFoundPage/>}/>

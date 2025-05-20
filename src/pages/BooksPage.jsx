@@ -7,7 +7,6 @@ export default function BooksPage() {
 
     useEffect(() => {
         async function getBooks() {
-
             const API = 'https://openlibrary.org/search.json?subject=children+stories&title='
             const res = await fetch(`${API}${query}`);
             const data = await res.json();
