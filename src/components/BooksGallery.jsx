@@ -30,7 +30,7 @@ export default function BooksGallery() {
               alt={book.title}
             />
           ) : (
-            <div className="no-cover">No Image</div>
+            <div>No Image</div>
           )}
           <h3>{book.title}</h3>
           <p><strong>Author:</strong> {book.author_name}</p>

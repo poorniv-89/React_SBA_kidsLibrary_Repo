@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 export default function SearchBar(){
     const[searchState, setSearchState]=useState('');
+    const nav = useNavigate();
+
 
     function handleChange(e)
     {
@@ -11,11 +14,13 @@ export default function SearchBar(){
     async function handleClick()
     {
 
-        if (!searchState.trim()) return;
-        const API = 'https://openlibrary.org/search.json?subject=children+stories&title='
-        const res = await fetch(`${API}${searchState}`);
-        const data = await res.json();
-        console.log(data);
+        if (!searchState) return;
+        nav(`/books?query=${searchState}`)
+
+        // const API = 'https://openlibrary.org/search.json?subject=children+stories&title='
+        // const res = await fetch(`${API}${searchState}`);
+        // const data = await res.json();
+        // setSearchResults(data.docs);
     
 }
         
