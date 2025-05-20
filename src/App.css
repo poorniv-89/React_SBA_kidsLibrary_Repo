@@ -1,59 +1,124 @@
-.nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #ffe066; /* Bright yellow background */
-    padding: 1rem;
-    border-bottom: 4px solid #f77f00;
+
+body {
     font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    background-color: #f7edbe; 
+    color: #2e3c4d;
+    text-align: center;
+  }
+  
+  /* Nav Bar */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fcced3; 
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.553);
   }
   
   .nav a {
-    text-decoration: none;
-    color: #2ec4b6; /* Teal blue text */
+    color: #3d405b;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    background-color: #ffddd2; /* Light pink background */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    background-color: #d8e2dc; 
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .nav a:hover {
-    background-color: #ff9f1c; /* Orange on hover */
-    color: white;
-    transform: scale(1.1);
+    background-color: #a2d2ff; 
+    transform: scale(1.05);
   }
+  
 
-body{
-    text-align: center;
-    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
-    
-}
-
-.about-container {
+  .about-container {
     max-width: 800px;
-    margin: 2rem auto;
-    background-color: #fff0f6; /* Light pink background */
+    margin: 7rem auto;
     padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
-    color: #3c096c; /* Dark purple text */
+    background-color: #faf3dd; 
+    border-radius: 1.5rem;
+    box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.651);
   }
   
   .about-container h1 {
+    color: #ff6b6b;
     font-size: 2.5rem;
-    color: #ff6f61; /* Coral */
     margin-bottom: 1rem;
   }
   
   .about-container p {
     font-size: 1.2rem;
-    margin-bottom: 1.2rem;
     line-height: 1.6;
+    color: #4a4e69;
   }
   
-  .about-container p:last-child {
-    font-style: italic;
-    color: #6a4c93; /* Soft purple */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .book {
+    width: 12rem;
+    background-color: #d9eaf2c7;
+    border: 2px solid #c9ada7;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .book:hover {
+    transform: translateY(-5px);
+    background-color: #ace4ecc7;
+  }
+  
+  .book img {
+    width: 100%;
+    height: 15rem;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+  }
+
+  .searchBar {
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 10rem;
+  }
+  
+  .searchBar input[type="text"] {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    font-size: 1.1rem;
+    border: 2px solid #c9ada7; 
+    border-radius: 25px;
+    transition: border-color 0.3s ease;
+    font-family: 'Comic Sans MS', cursive;
+  }
+  
+  .searchBar input[type="text"]:focus {
+    border-color: #fcbf49; 
+  }
+  
+  .searchBar button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.1rem;
+    background-color: #fcbf49; 
+    border: none;
+    border-radius: 25px;
+    color: #4a4e69;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Comic Sans MS', cursive;
+  }
+  
+  .searchBar button:hover {
+    background-color: #ff6b6b; 
+    color: white;
   }
