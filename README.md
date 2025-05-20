@@ -1,12 +1,13 @@
-# React + Vite
+**Description**
+Kids Book Library is a fun app where kids can find and explore children’s books. They can search for books by title or topic and see colorful pictures of the books. 
+This app uses the **Open Library API**, a free and open database of books. The API allows us to search for children’s books by title or subject, and it provides book details like titles, authors and cover images. This helps kids explore a wide variety of books easily without needing to visit multiple websites.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Kids Book Library app includes several pages to make exploring books fun and easy:
 
-Currently, two official plugins are available:
+**Home Page**: Features 10 random popular children’s books picked for the week, giving kids fresh recommendations every time they visit.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Books Page**: Displays a searchable gallery of children’s books by title or subject.
 
-## Expanding the ESLint configuration
+**Favorites Page**: Lets users save their favorite books for quick access later.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**About Page**: Provides information about the Kids Book Library app — what it does, who it’s for and how it helps kids discover fun and educational books.
