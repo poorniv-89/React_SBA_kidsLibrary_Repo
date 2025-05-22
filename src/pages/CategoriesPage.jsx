@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function CategoriesPage() {
+    const [categories, setCategories]=useState([]);
   useEffect(() => {
     async function getCategories() {
       const API = 'https://openlibrary.org/search.json?subject=children+stories&limit=20';
@@ -16,12 +17,24 @@ export default function CategoriesPage() {
         subjectArray.push(...bookSubjects.subjects);
        
       }
-      console.log(subjectArray);
+      const uniqueSubjects = [...new Set(subjectArray)];
+      const ChosenSubjects = uniqueSubjects.slice(0,15);
+      
+      console.log(ChosenSubjects);
+      setCategories(ChosenSubjects);
     }
     getCategories();
   }, []);
 
   return (
-    <h1>Categories page</h1>
+    <ul>
+      {categories.map((category, index) => (
+        <li key={index}>
+          <a href ='#'>
+            {category}
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 }
