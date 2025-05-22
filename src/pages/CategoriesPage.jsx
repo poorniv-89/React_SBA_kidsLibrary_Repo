@@ -5,8 +5,6 @@ export default function CategoriesPage() {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-
-
         async function getCategories() {
 
             // Initial API to fetch books related to children stories
@@ -36,8 +34,6 @@ export default function CategoriesPage() {
             console.log(ChosenSubjects);
             setCategories(ChosenSubjects);
         }
-
-
         getCategories();
     }, []);
 

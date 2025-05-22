@@ -5,6 +5,7 @@ export default function BooksGallery() {
   useEffect(() => {
     async function fetchBooks() {
       try {
+         // Generating a random page number for variety
         const randomPage = Math.floor(Math.random() * 10) + 1; 
         const API = `https://openlibrary.org/search.json?subject=children+stories&limit=20&page=${randomPage}`;
         const res = await fetch(API);
@@ -20,6 +21,7 @@ export default function BooksGallery() {
     fetchBooks();
   }, []);
 
+  // Render books gallery
   let loaded = ()=>{
     return (
       <div className="gallery">
@@ -41,10 +43,12 @@ export default function BooksGallery() {
     )
   }
 
+// Render loading message
   let loading = ()=>{
     return <p>Homepage loading....</p>
   }
 
+  // Shows gallery if books are loaded, otherwise shows loading
   return books.length > 0 ? loaded() : loading();
 }
 

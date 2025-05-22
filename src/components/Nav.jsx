@@ -1,3 +1,4 @@
+// Navigation bar component with links to main pages using React Router's Link
 import { Link } from "react-router-dom"
 export default function Nav() {
     return (
