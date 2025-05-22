@@ -27,14 +27,20 @@ export default function CategoriesPage() {
   }, []);
 
   return (
-    <ul>
-      {categories.map((category, index) => (
-        <li key={index}>
-          <a href ='#'>
-            {category}
-          </a>
-        </li>
-      ))}
-    </ul>
+    <div className="categories-container">
+      <h1 className="categories-title">Popular Story Categories</h1>
+      <ul className="category-list">
+        {categories.map((category, index) => (
+          <li key={index} className="category-item">
+            <a
+              className="category-link"
+              href='#'
+            >
+              {category}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
