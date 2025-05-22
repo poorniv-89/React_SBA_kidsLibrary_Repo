@@ -15,6 +15,8 @@ The Kids Book Library app includes several pages to make exploring books fun and
 **Tools & Libraries Used**
 
 **React** { useState, useEffect }– JavaScript library for building user interfaces
+
 **React Router DOM** { Links, useNavigate, useSearchParams } – For handling client-side routing between pages
+
 **Open Library API** – To fetch book data including titles, authors, subjects, and cover images
 
