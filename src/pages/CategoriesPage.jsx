@@ -7,15 +7,16 @@ export default function CategoriesPage() {
       const res = await fetch(API);
       const data = await res.json();
       const books = data.docs;
-
+        let subjectArray = [];
       for (const book of books) {
         const key = book.key; 
         const newAPI = `https://openlibrary.org${key}.json`;
         const subjectRes = await fetch(newAPI);
         const bookSubjects = await subjectRes.json();
-
-        console.log(bookSubjects.subjects);  
+        subjectArray.push(...bookSubjects.subjects);
+       
       }
+      console.log(subjectArray);
     }
     getCategories();
   }, []);
