@@ -16,11 +16,6 @@ export default function SearchBar(){
 
         if (!searchState) return;
         nav(`/books?query=${searchState}`)
-
-        // const API = 'https://openlibrary.org/search.json?subject=children+stories&title='
-        // const res = await fetch(`${API}${searchState}`);
-        // const data = await res.json();
-        // setSearchResults(data.docs);
     
 }
         

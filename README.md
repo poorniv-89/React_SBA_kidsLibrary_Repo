@@ -4,10 +4,11 @@ This app uses the **Open Library API**, a free and open database of books. The A
 
 The Kids Book Library app includes several pages to make exploring books fun and easy:
 
-**Home Page**: Features 10 random popular children’s books picked for the week, giving kids fresh recommendations every time they visit.
+**Home Page**: Features 20 random popular children’s books picked for the week, giving kids fresh recommendations every time they visit.
 
 **Books Page**: Displays a gallery of children’s books matching the searched title or subject.
 
 **Favorites Page**: Lets users save their favorite books for quick access later. **Stretch Goals**
 
 **About Page**: Provides information about the Kids Book Library app — what it does, who it’s for and how it helps kids discover fun and educational books.
+
