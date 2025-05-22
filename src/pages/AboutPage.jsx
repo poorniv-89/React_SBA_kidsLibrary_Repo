@@ -1,3 +1,4 @@
+// AboutPage: Displays a brief description of the Kids Book Library app and its mission
 export default function AboutPage() {
     return (
       <div className="about-container">
